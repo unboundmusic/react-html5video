@@ -157,6 +157,8 @@ var Video = React.createClass({
             this.videoEl.mozRequestFullScreen();
         } else if (this.videoEl.webkitRequestFullscreen) {
             this.videoEl.webkitRequestFullscreen();
+        } else if (this.videoEl.webkitEnterFullscreen) {
+            this.videoEl.webkitEnterFullscreen();
         }
     },
 
